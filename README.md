@@ -63,6 +63,10 @@
 
 ![(null)](README.assets/cif00001.png)  
 
+### 2.2. 클러스터 노드 정의서
+
+![cluster_node](README.assets/cluster_node.png)
+
 | Category          | Name            | Version    |
 | ----------------- | --------------- | ---------- |
 | Environment       | AWS EC2         | free tier  |
@@ -80,10 +84,6 @@
 |                   | Django          | 3.2.16     |
 |                   | Nginx           |            |
 |                   | Docker          |            |
-
-### 2.2. 클러스터 노드 정의서
-
-![cluster_node](README.assets/cluster_node.png)
 
 <br>
 
