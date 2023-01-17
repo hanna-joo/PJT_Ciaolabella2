@@ -91,7 +91,7 @@
 
 ### 3.1. 유저 로그 데이터
 
-**유저 로그 데이터 플로우**
+**(1) 유저 로그 데이터 플로우**
 
 ![log_pipeline](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbX4png%2FbtrUxdYLAle%2F8zh19fuY0isLKuS6jLpJak%2Fimg.png)
 * 유저 로그 데이터 활용도에 따른 구분 및 저장
@@ -114,7 +114,7 @@
   * 전체 데이터를 Hadoop에 csv 형식으로 저장
 * **Airflow 를 통하여 데이터 플로우 자동화**
 
-**Redis 로그 시각화 대시보드**
+**(2) Redis 로그 시각화 대시보드**
 
 ![tab1](README.assets/tab1.png)
 
@@ -124,7 +124,7 @@
 
 ![tab4](README.assets/tab4.png)
 
-**MongoDB 로그 데이터 시각화 대시보드**
+**(3) MongoDB 로그 데이터 시각화 대시보드**
 
 ![grafana_dashboard](README.assets/grafana_dashboard.png)
 
@@ -148,13 +148,13 @@
 
 ### 4.2. 유저 맞춤형 실시간 검색어 제공
 
-**구현 방안**
+**(1) 구현 방안**
 
 - `1단계` : 무라벨 제품 검색 서비스에서 발생하는 검색어 로그 수집
 - `2단계` : Spark-streaming 을 통하여 실시간 집계 후 인메모리 저장소인 Redis 에 저장
 - `3단계` : 마이페이지에서 해당 회원의 성별과 연령대에 해당하는 검색어 조회 및 표시
 
-**구현 결과**
+**(2) 구현 결과**
 
 ![Mypage](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHRshn%2FbtrUBaAglcl%2Fiax4Tr9qUTTb49J1Komhzk%2Fimg.png)
 
