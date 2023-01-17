@@ -63,23 +63,23 @@
 
 ![(null)](README.assets/cif00001.png)  
 
-| Category          | Name          | Version    |
-| ----------------- | ------------- | ---------- |
-| Environment       | AWS EC2       | free tier  |
-|                   | Ubuntu        | 20.04      |
-| Big Data Platform | Kafka         | 2.12-3.2.0 |
-|                   | Zookeeper     | 3.8.0      |
-|                   | Hadoop        | 3.3.3      |
-|                   | Spark         | 3.1.3      |
-|                   | Elasticsearch | 7.17.5     |
-|                   | Airflow       | 2.5.0      |
-| Database          | MySQL         | 8.0.31     |
-|                   | MongoDB       | 4.4.5      |
-|                   | Redis         | 7.0.5      |
-| Web Development   | Flask         | 2.2.2      |
-|                   | Django        | 3.2.16     |
-|                   | Nginx         |            |
-|                   | Docker        |            |
+| Category          | Name            | Version    |
+| ----------------- | --------------- | ---------- |
+| Environment       | AWS EC2         | free tier  |
+|                   | Ubuntu          | 20.04      |
+| Big Data Platform | Kafka           | 2.12-3.2.0 |
+|                   | Zookeeper       | 3.8.0      |
+|                   | Hadoop          | 3.3.3      |
+|                   | Spark           | 3.1.3      |
+|                   | Elasticsearch   | 7.17.5     |
+|                   | Airflow         | 2.5.0      |
+| Database          | MySQL           | 8.0.31     |
+|                   | MongoDB         | 4.4.5      |
+|                   | Redis           | 7.0.5      |
+| Web Development   | Flask           | 2.2.2      |
+|                   | Django          | 3.2.16     |
+|                   | Nginx           |            |
+|                   | Docker          |            |
 
 ### 2.2. 클러스터 노드 정의서
 
@@ -98,7 +98,7 @@
   * `Hot data` : 당일 발생한 로그 데이터 (실시간 시각화 및 분석 용도)
   * `Warm data` : 최근 일주일 치 로그 데이터 (체류시간 포함 일주일 치 시각화 및 분석 용도)
   * `Cold data` : 과거 모든 로그 데이터 (향후 분석 및 백업 용도)
-* `Hot Data`
+* **Hot Data**
   * 원본 로그
     * Django 에서 수집한 원본 로그 데이터를 1차적으로 데이터허브인 Kafka 에 저장
   * 실시간 로그 집계
@@ -106,11 +106,11 @@
     * Redis-Streamlit 을 통한 시각화 대시보드
   * 배치 로그 집계
     * Spark 을 통하여 당일 발생 로그에 대해 집계본을 만들어 Kafka 에 저장
-* `Warm Data`
+* **Warm Data**
   * Redis 에 저장된 전날 발생한 실시간 로그 집계 데이터를 2차적으로 Kafka에 저장
   * 최근 일주일치 발생한 로그 집계 데이터를 Kafka 에서 MongoDB에 저장
   * MongoDB-Grafana를 통한 시각화 대시보드
-* `Cold data`
+* **Cold data**
   * 전체 데이터를 Hadoop에 csv 형식으로 저장
 * 위와 같은 데이터 플로우는 Airflow 를 통하여 자동화
 
