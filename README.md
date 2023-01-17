@@ -30,7 +30,7 @@
 
 ## 1. 프로젝트 개요
 
-### 1.1. 프로젝트 기간 및 팀 소개
+### 1.1. 프로젝트 기간 및 팀
 
 - 1차 프로젝트 : 2022.08.18 ~ 2022.09.30
   - [Ciao label la ver.1 포트폴리오 바로 가기](https://github.com/hanna-joo/PJT_Ciaolabella1)
