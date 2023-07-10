@@ -58,23 +58,23 @@
 
 ![cluster_node](README.assets/cluster_node.png)
 
-| Category          | Name            | Version    |
-| ----------------- | --------------- | ---------- |
-| Environment       | AWS EC2         | free tier  |
-|                   | Ubuntu          | 20.04      |
-| Big Data Platform | Kafka           | 2.12-3.2.0 |
-|                   | Zookeeper       | 3.8.0      |
-|                   | Hadoop          | 3.3.3      |
-|                   | Spark           | 3.1.3      |
-|                   | Elasticsearch   | 7.17.5     |
-|                   | Airflow         | 2.5.0      |
-| Database          | MySQL           | 8.0.31     |
-|                   | MongoDB         | 4.4.5      |
-|                   | Redis           | 7.0.5      |
-| Web Development   | Flask           | 2.2.2      |
-|                   | Django          | 3.2.16     |
-|                   | Nginx           |            |
-|                   | Docker          |            |
+| Category             | Name               | Version       |
+| -------------------- | ------------------ | ------------- |
+| Environment          | AWS EC2            | free tier     |
+|                      | Ubuntu             | 20.04         |
+| Big Data Platform    | Kafka              | 2.12-3.2.0    |
+|                      | Zookeeper          | 3.8.0         |
+|                      | Hadoop             | 3.3.3         |
+|                      | Spark              | 3.1.3         |
+|                      | Elasticsearch      | 7.17.5        |
+|                      | Airflow            | 2.5.0         |
+| Database             | MySQL              | 8.0.31        |
+|                      | MongoDB            | 4.4.5         |
+|                      | Redis              | 7.0.5         |
+| Web Development      | Flask              | 2.2.2         |
+|                      | Django             | 3.2.16        |
+|                      | Nginx              |               |
+|                      | Docker             |               |
 
 <br>
 
