@@ -8,23 +8,16 @@
 - [2. 프로젝트 설계](#2-프로젝트-설계)
   - [2.1. 아키텍처 정의서](#21-아키텍처-정의서)
   - [2.2. 클러스터 노드 정의서](#22-클러스터-노드-정의서)
-- [3. 파이프라인 확장 및 보완](#3-파이프라인-확장-및-보완)
-  - [3.1. 유저 로그 데이터](#31-유저-로그-데이터)
+  - [2.3. 로그 이벤트 스키마 설계서](#23-로그-이벤트-스키마-설계서)
+- [3. 파이프라인 확장](#3-파이프라인-확장-및-보완)
+  - [3.1. 유저 로그 데이터 (+시각화)](#31-유저-로그-데이터)
   - [3.2. 유저 업로드 이미지 데이터](#32-유저-업로드-이미지-데이터)
 - [4. 서비스 고도화](#4-서비스-고도화)
   - [4.1. 무라벨 제품 조회 서비스 업데이트](#41-무라벨-제품-조회-서비스-업데이트)
   - [4.2. 유저 맞춤형 실시간 검색어 제공](#42-유저-맞춤형-실시간-검색어-제공)
   - [4.3. 악성 유저 대처](#43-악성-유저-대처)
 - [5. 서비스 화면](#5-서비스-화면)
-  - [5.1. 서비스 메인 페이지](#51-서비스-메인-페이지)
-  - [5.2. 서비스 소개 페이지](#52-서비스-소개-페이지)
-  - [5.3. Ecopoint1 페이지](#53-ecopoint1-페이지)
-  - [5.4. Ecopoint2 페이지](#54-ecopoint2-페이지)
-  - [5.5. No Label 페이지](#55-no-label-페이지)
-  - [5.6. Less Waste 페이지](#56-less-waste-페이지)
-  - [5.7. 마이페이지](#57-마이페이지)
-  - [5.8. 회원가입 페이지](#58-회원가입-페이지)
-  - [5.9. 로그인 페이지](#59-로그인-페이지)
+
 
 ---
 
@@ -84,6 +77,9 @@
 |                   | Docker          |            |
 
 <br>
+
+### 2.3. 로그 이벤트 스키마 설계서
+- [이벤트 스키마 설계서 바로 가기](https://docs.google.com/spreadsheets/d/e/2PACX-1vRA5JgzEgXc764dNRajSo9-CkOtdto3dK4IxZ1t2OgeUqWM_TpiHRXMfhSWDfxCkxWuYlTElwjNOJfr/pubhtml?gid=367769533&single=true)
 
 ## 3. 파이프라인 확장 및 보완
 
@@ -171,31 +167,31 @@
 
 ## 5. 서비스 화면
 
-### 5.1. 서비스 메인 페이지
+### 5.1. 서비스 메인
 
 ![index](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FYUkFY%2FbtrUfbmCVv8%2F6gL7fLdgTH73ygvGvVWUnK%2Fimg.png)
 
-### 5.2. 서비스 소개 페이지
+### 5.2. 서비스 소개
 
 ![About](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcmQZ58%2FbtrUzl25CIf%2FF2x66CpWPKg7bw0F45mbRk%2Fimg.png)
 
-### 5.3. Ecopoint1 페이지
+### 5.3. Ecopoint1
 ![Ecopoint1](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FWBCCL%2FbtrUxeQXxet%2F4MrkEniqZA7jbrJk3TP3e1%2Fimg.png)
 
-### 5.4. Ecopoint2 페이지
+### 5.4. Ecopoint2
 ![Ecopoint2](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpLeNy%2FbtrUt25gkFq%2FTbj4o4yUfr9LKWQBs61WBK%2Fimg.png)
 
-### 5.5. No Label 페이지
+### 5.5. No Label
 ![NoLabel](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcDON8h%2FbtrUzlINwqq%2FfZCTjOPQ7xKboUMdmyqHFk%2Fimg.png)
 
-### 5.6. Less Waste 페이지
+### 5.6. Less Waste
 ![LessWaste](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbxt71o%2FbtrUExBL38m%2FXGieoLXyooN407mZHJV2JK%2Fimg.png)
 
 ### 5.7. 마이페이지
 ![Mypage](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHRshn%2FbtrUBaAglcl%2Fiax4Tr9qUTTb49J1Komhzk%2Fimg.png)
 
-### 5.8. 회원가입 페이지
+### 5.8. 회원가입
 ![SignUp](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXu8Ja%2FbtrUa25u90u%2FP5AHkpz1pAtB9ScT5im210%2Fimg.png)
 
-### 5.9. 로그인 페이지
+### 5.9. 로그인
 ![SignIn](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FYKE0k%2FbtrUuhHFrhk%2FzTyaKCh9ZYXay9hAsx9LhK%2Fimg.png)
