@@ -9,7 +9,7 @@
   - [2.1. 아키텍처 정의서](#21-아키텍처-정의서)
   - [2.2. 클러스터 노드 정의서](#22-클러스터-노드-정의서)
   - [2.3. 로그 이벤트 스키마 설계서](#23-로그-이벤트-스키마-설계서)
-- [3. 파이프라인 확장](#3-파이프라인-확장-및-보완)
+- [3. 로그 파이프라인 확장](#3-로그-파이프라인-확장)
   - [3.1. 유저 로그 데이터 (+시각화)](#31-유저-로그-데이터)
   - [3.2. 유저 업로드 이미지 데이터](#32-유저-업로드-이미지-데이터)
 - [4. 서비스 고도화](#4-서비스-고도화)
@@ -81,7 +81,7 @@
 ### 2.3. 로그 이벤트 스키마 설계서
 - [이벤트 스키마 설계서 바로 가기](https://docs.google.com/spreadsheets/d/e/2PACX-1vRA5JgzEgXc764dNRajSo9-CkOtdto3dK4IxZ1t2OgeUqWM_TpiHRXMfhSWDfxCkxWuYlTElwjNOJfr/pubhtml?gid=367769533&single=true)
 
-## 3. 파이프라인 확장 및 보완
+## 3. 로그 파이프라인 확장
 
 ### 3.1. 유저 로그 데이터
 
@@ -136,9 +136,9 @@
 
 ![nolabel_pipeline](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fddv8U1%2FbtrUuQpJIBP%2FIKPlXmd5VoZxjy5ESBq9B1%2Fimg.png)
 
-* 파이썬 스크립트를 통하여 웹에서 nolabel 제품데이터 크롤링 후 원본 hadoop에 적재
-* spark를 통한 원본 데이터 가공 후 Kafka 적재 후 es 저장
-* 매주 일요일 02:00 데이터 업데이트 되도록 Airflow를 통한 스케쥴링
+- `1단계` : 파이썬 스크립트를 통하여 웹에서 무라벨 제품데이터 크롤링 후 원본 Hadoop에 적재
+- `2단계` : Spark를 통한 원본 데이터 가공 후 Kafka 적재 후 ElasticSearch 저장
+- `3단계` : 매주 일요일 02:00 데이터 업데이트 되도록 Airflow를 통한 스케쥴링
 
 ### 4.2. 유저 맞춤형 실시간 검색어 제공
 
